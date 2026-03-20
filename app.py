@@ -43,7 +43,9 @@ st.markdown("""
     
     label, h1, h2, h3, h4 { color: #D4AF37 !important; }
     p, span { color: #FFF !important; }
-    #MainMenu {visibility: hidden;} footer {visibility: hidden;} header[data-testid="stHeader"] {visibility: hidden;}
+    /* Hide the Streamlit watermark footer, but keep the header menu visible and transparent */
+footer {visibility: hidden;} 
+header[data-testid="stHeader"] {background-color: transparent !important;}
     </style>
 """, unsafe_allow_html=True)
 
