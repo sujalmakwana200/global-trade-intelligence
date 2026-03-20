@@ -72,7 +72,7 @@ with st.expander("⚙️ STRATEGIC COMMAND CENTER (Click to Expand/Collapse)", e
     col_ingest, col_trade, col_logistics = st.columns(3)
     
     with col_ingest:
-        st.markdown("#### 1. Data Ingestion")
+        st.markdown("#### 1. Data Integration")
         uploaded_file = st.file_uploader("Upload CSV Database", type="csv")
         if uploaded_file is not None:
             try:
